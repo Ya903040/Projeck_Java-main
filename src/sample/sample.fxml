@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="457.0" style="-fx-background-color: #333;" styleClass="anchorpane" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    
+    
+
+    <children>
+
+        <AnchorPane layoutX="-1.0" prefHeight="104.0" prefWidth="458.0" style="-fx-background-color: #666699;">
+         <children>
+            <Button fx:id="getData" layoutX="326.0" layoutY="37.0" mnemonicParsing="false" style="-fx-border-color: blue;" text="🔎 search" />
+              <TextField fx:id="city" layoutX="138.0" layoutY="40.0" promptText="ENTER THE CITY" style="-fx-background-color: white; -fx-border-color: green; -fx-border-radius: 7px;">
+                  <font>
+                      <Font name="Constantia" size="12.0" />
+                  </font>
+              </TextField>
+            <ImageView fitHeight="72.0" fitWidth="107.0" layoutX="36.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://w7.pngwing.com/pngs/45/251/png-transparent-computer-icons-clouds-with-sun.png" />
+               </image>
+            </ImageView>
+         </children>
+        </AnchorPane>
+        <Text fx:id="temp_info" fill="#da5d5d" layoutX="89.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+      <AnchorPane layoutX="20.0" layoutY="250.0" prefHeight="194.0" prefWidth="416.0">
+         <children>
+              <Text fx:id="temp_feels" layoutX="257.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels:">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </Text>
+              <Text fx:id="temp_min" layoutX="15.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum:">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </Text>
+            <Text fx:id="description" layoutX="19.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather:" wrappingWidth="212.94286960363388">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+              <Text fx:id="temp_max" layoutX="239.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum:">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </Text>
+              <Text fx:id="pressure" layoutX="19.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </Text>
+            <Text fx:id="speed" layoutX="251.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Speed: ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="474.0" prefHeight="88.0" prefWidth="458.0">
+         <children>
+            <Button fx:id="exitButton" layoutX="390.0" layoutY="44.0" mnemonicParsing="false" onAction="#exit" text="exit" />
+            <Text fx:id="error" fill="#e43434" layoutX="36.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="88.0" fitWidth="75.0" layoutX="39.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://cdn-icons-png.flaticon.com/512/4327/4327181.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

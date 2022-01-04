@@ -1,0 +1,13 @@
+.anchorpane{
+    -fx-background-image: url("images/img.png");
+    -fx-background-radius: 18px;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.btm-pane{
+    -fx-background-color: #2E3335;
+    -fx-background-radius: 18px;
+}
+
